@@ -1,5 +1,9 @@
 FROM eclipse-temurin:21-jdk-jammy
 
+ARG ANDROID_SDK_TOOLS
+ARG ANDROID_COMPILE_SDK
+ARG ANDROID_BUILD_TOOLS
+
 ENV ANDROID_SDK_ROOT=/opt/android-sdk
 
 RUN apt-get --quiet update --yes && \
